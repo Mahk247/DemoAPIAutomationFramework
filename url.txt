@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=FjnF-P7FY28
+
+https://www.youtube.com/watch?v=y6d6yjmQPk4
+
+https://tech-with-jatin.notion.site/E2E-Automation-Framework-Creation-1526d427c22780328b8fff211ee050b7
+
+https://swift.techwithjatin.com/login 
+
+user: uday1234
+passu: day1234
+
+** We do not need to create an object of rest assured because all the methods are in rest assured are static in nature.
+
+** What is request specification?
+	
