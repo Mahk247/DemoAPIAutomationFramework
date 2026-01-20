@@ -11,6 +11,7 @@ public class LoginAPITest3 {
 	@Test(description = "Verify if the Login API is working")
 	public void loginTest() {
 		LoginRequest loginRequest = new LoginRequest("uday1234", "uday1234");
+		
 		AuthService authService = new AuthService();
 		Response response = authService.login(loginRequest);
 		LoginResponse loginResponse = response.as(LoginResponse.class);
@@ -20,7 +21,7 @@ public class LoginAPITest3 {
 		System.out.println(loginResponse.getEmail());
 	}
 	/*	Links
-	 * 	https://www.youtube.com/watch?v=y6d6yjmQPk4&t=4175s 
+	 * 	https://www.youtube.com/watch?v=y6d6yjmQPk4&t=4175s [day 2 1.56mm]
 	 *	http://64.227.160.186:8080/swagger-ui/index.html#/kyc-controller
 	 *	https://tech-with-jatin.notion.site/E2E-Automation-Framework-Creation-1526d427c22780328b8fff211ee050b7
 
