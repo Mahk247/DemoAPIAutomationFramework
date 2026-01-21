@@ -7,17 +7,12 @@ import com.api.models.request.SignUpRequest;
 
 import io.restassured.response.Response;
 
-public class AccountCreationTest {
+public class ForgotPasswordTest {
 	@Test(description = "Verify if the Login API is working")
-	public void createAccounTest() {
-		SignUpRequest signUpRequest =new SignUpRequest.Builder()
-				.userName("Khan123").password("khan@123")
-				.email("khan@test.com").firstName("mahmud").lastName("khan").mobileNumber("3471231234").build();
-		
+	public void forgotPasswordTest() {
 		AuthService authService = new AuthService();
-		Response response =authService.signUp(signUpRequest);
+		Response response =authService.forgotPassword("khan@test.com");
 		System.out.println(response.asPrettyString());
 	}
 	
-
 }
