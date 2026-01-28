@@ -6,22 +6,24 @@ import com.api.base.AuthService;
 import com.api.base.UserProfileManagmentService;
 import com.api.models.request.LoginRequest;
 import com.api.models.response.LoginResponse;
+import com.api.models.response.UserProfileResponse;
 
 import io.restassured.response.Response;
 
 public class GetProfileRequestTest {
-	
-	
+
 	@Test
 	public void getProfileInfoTest() {
 		AuthService authService = new AuthService();
-		Response response = authService.login(new LoginRequest("uday1234", "uday1234"));
+		Response response = authService.login(new LoginRequest("", ""));
 		LoginResponse loginResponse = response.as(LoginResponse.class);
 		System.out.println(loginResponse.getToken());
-		
-		UserProfileManagmentService userProfileManagmentService =new UserProfileManagmentService();
+
+		UserProfileManagmentService userProfileManagmentService = new UserProfileManagmentService();
 		response = userProfileManagmentService.getProfile(loginResponse.getToken());
-		System.out.println(response.asPrettyString());
+		UserProfileResponse userProfileResponse = response.as(UserProfileResponse.class);
+		System.out.println(userProfileResponse.getUsername());
 	}
 
 }
+ 

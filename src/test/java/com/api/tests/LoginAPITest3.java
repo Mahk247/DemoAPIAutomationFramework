@@ -1,12 +1,13 @@
 package com.api.tests;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.api.base.AuthService;
 import com.api.models.request.LoginRequest;
 import com.api.models.response.LoginResponse;
-
 import io.restassured.response.Response;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class LoginAPITest3 {
 	@Test(description = "Verify if the Login API is working")
 	public void loginTest() {
@@ -31,4 +32,4 @@ public class LoginAPITest3 {
 	 * >>	The way we design this login test we can only run any method independently instead of run all the test.
 	 * >>	The purpose of SOM is handle the business logic and the application rules.
 	 */
-} 
+}
