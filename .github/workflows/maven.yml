@@ -2,9 +2,13 @@ name: API Test Framework
 
 on:
   push:
-    branches: [ "khan" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "khan" ]
+    branches: [ "main" ]
+
+  schedule: 
+    - cron: 00 13 * * *  
+    
 
 jobs:
   build:
@@ -19,6 +23,13 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-        
+
+      
     - name: Exicute Tests
       run: mvn clean test -Dsuite=suite -x
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v6.0.0
+      with:
+        name: Logs
+        path: logs/
