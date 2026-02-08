@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 27 22:23:16 EST 2026</td>
+<td>Started on:</td><td>Wed Jan 28 19:26:15 EST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2611 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2905 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.api.tests.GetProfileRequestTest.getProfileInfoTest()'><b>getProfileInfoTest</b><br>Test class: com.api.tests.GetProfileRequestTest</td>
+<td title='com.api.tests.UpdateProfileTest.getProfileInfoTest()'><b>getProfileInfoTest</b><br>Test class: com.api.tests.UpdateProfileTest</td>
 <td><div><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;timestamp&quot; (class com.api.models.response.LoginResponse), not marked as ignorable (6 known properties: &quot;username&quot;, &quot;token&quot;, &quot;type&quot;, &quot;id&quot;, &quot;email&quot;, &quot;roles&quot;])
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 15] (through reference chain: com.api.models.response.LoginResponse[&quot;timestamp&quot;])
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
@@ -100,7 +100,7 @@ function toggleAllBoxes() {
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at com.api.tests.GetProfileRequestTest.getProfileInfoTest(GetProfileRequestTest.java:19)
+	at com.api.tests.UpdateProfileTest.getProfileInfoTest(UpdateProfileTest.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -141,8 +141,8 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3860)
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
 	... 47 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace215911532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace215911532'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;timestamp&quot; (class com.api.models.response.LoginResponse), not marked as ignorable (6 known properties: &quot;username&quot;, &quot;token&quot;, &quot;type&quot;, &quot;id&quot;, &quot;email&quot;, &quot;roles&quot;])
+</pre></div><a href='#' onClick='toggleBox("stack-trace354071225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace354071225'><pre>java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;timestamp&quot; (class com.api.models.response.LoginResponse), not marked as ignorable (6 known properties: &quot;username&quot;, &quot;token&quot;, &quot;type&quot;, &quot;id&quot;, &quot;email&quot;, &quot;roles&quot;])
  at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 15] (through reference chain: com.api.models.response.LoginResponse[&quot;timestamp&quot;])
 	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
 	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
@@ -165,7 +165,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
 	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:229)
 	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
-	at com.api.tests.GetProfileRequestTest.getProfileInfoTest(GetProfileRequestTest.java:19)
+	at com.api.tests.UpdateProfileTest.getProfileInfoTest(UpdateProfileTest.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -208,7 +208,7 @@ Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unr
 	... 47 more
 </pre></div></td>
 <td>2</td>
-<td>com.api.tests.GetProfileRequestTest@5158b42f</td></tr>
+<td>com.api.tests.UpdateProfileTest@399f45b1</td></tr>
 </table><p>
 </body>
 </html>

@@ -13,3 +13,14 @@ passu: day1234
 
 ** What is request specification?
 	
+	
+	Running Test
+	
+	# Run specific suite
+mvn clean test -Dsuite=regression
+
+# Run with thread count
+mvn clean test -Dthreads=4
+
+# Run specific groups
+mvn clean test -Dgroups=auth,user

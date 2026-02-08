@@ -33,7 +33,7 @@ public class UpdateProfileTest {
 		
 		response = userProfileManagmentService.updateProfile(loginResponse.getToken(), profileRequest);
 		System.out.println(response.asPrettyString());
-		
+
 	}
 
 }
